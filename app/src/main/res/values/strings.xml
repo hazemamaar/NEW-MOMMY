@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NEW MOMMY</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="des_1">NOW YOU CAN FOLLOW YOUR PREGNANCY VIA APP WITH LESS NEED TO DOCTORS.</string>
+    <string name="des_2">WE SUGGEST YOU SOME NAMES TO YOUR BABY ( BOY &amp; GIRL)</string>
+    <string name="des_3">APP HAS SOME ADVICES FOR YOUR illness AND NEEDS FOR PREGNANCY.</string>
+
+    <string name="title_1">Follow pregnancy</string>
+    <string name="title_2">New baby</string>
+    <string name="title_3">Medical consultation</string>
+    <string name="join_our_community">Join Our Community</string>
+    <string name="ull_access_today">Get full access today.</string>
+
+</resources>
