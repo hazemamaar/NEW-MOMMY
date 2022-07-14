@@ -13,21 +13,20 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="text_input_Post_style"
-        parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    <style name="text_input_Post_style" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxCornerRadiusBottomEnd">@dimen/_20sdp</item>
         <item name="boxCornerRadiusBottomStart">@dimen/_20sdp</item>
         <item name="boxCornerRadiusTopEnd">@dimen/_20sdp</item>
         <item name="boxCornerRadiusTopStart">@dimen/_20sdp</item>
         <item name="boxStrokeColor">@color/gray</item>
-        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidth">2dp</item>
         <item name="maxLines">5</item>
         <item name="boxBackgroundColor">@color/white</item>
         <item name="helperTextTextColor">@color/gray</item>
     </style>
 
-    <style name="button_style"
-        parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+    <style name="button_style" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
         <item name="cornerRadius">@dimen/_20sdp</item>
         <item name="backgroundTint">@android:color/holo_blue_dark</item>
         <item name="textAllCaps">false</item>
@@ -35,5 +34,38 @@
         <item name="iconTint">@color/white</item>
         <item name="android:padding">@dimen/_12sdp</item>
     </style>
+
+    <style name="custom_card" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeWidth">@dimen/_2sdp</item>
+        <item name="strokeColor">@color/gray</item>
+        <item name="cardCornerRadius">@dimen/_20sdp</item>
+        <!--        <item name="boxCornerRadiusBottomEnd">@dimen/_20sdp</item>-->
+        <!--        <item name="boxCornerRadiusBottomStart">@dimen/_20sdp</item>-->
+        <!--        <item name="boxCornerRadiusTopEnd">@dimen/_20sdp</item>-->
+        <!--        <item name="boxCornerRadiusTopStart">@dimen/_20sdp</item>-->
+        <!--        <item name="boxStrokeColor">@color/gray</item>-->
+        <!--        <item name="boxStrokeWidth">10dp</item>-->
+        <!--        <item name="maxLines">5</item>-->
+        <!--        <item name="boxBackgroundColor">@color/white</item>-->
+        <!--        <item name="helperTextTextColor">@color/gray</item>-->
+    </style>
+
+    <style name="btn_app" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+
+
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/gray</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Theme.NEWMOMMY.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NEWMOMMY.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.NEWMOMMY.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

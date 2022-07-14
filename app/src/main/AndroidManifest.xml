@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.newmommy">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".BaseApplication"
         android:allowBackup="true"
@@ -11,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NEWMOMMY">
         <activity
+            android:name=".ui.activities.MainAppActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_app"
+            android:theme="@style/Theme.NEWMOMMY.NoActionBar" />
+        <activity
             android:name=".ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -19,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

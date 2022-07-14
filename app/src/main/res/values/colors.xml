@@ -11,4 +11,8 @@
     <color name="pink">#F2789F</color>
     <color name="pinkA"> #F999B7</color>
     <color name="blackwi">#0D0C0C</color>
+    <color name="pinkB">#810955</color>
+    <color name="back">#233975</color>
+    <color name="pink_black">#844648</color>
+
 </resources>

@@ -12,5 +12,16 @@
     <string name="title_3">Medical consultation</string>
     <string name="join_our_community">Join Our Community</string>
     <string name="ull_access_today">Get full access today.</string>
+    <string name="_2_amp_3_letters"><![CDATA[2&3 Letters]]></string>
+    <string name="_4_amp_5_letters"><![CDATA[4&5 Letters]]></string>
+    <string name="title_activity_main_app">MainAppActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

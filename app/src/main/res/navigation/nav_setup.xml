@@ -27,5 +27,37 @@
         android:id="@+id/signUpFragment"
         android:name="com.android.newmommy.ui.fragments.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.android.newmommy.ui.fragments.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_confirmAccFragment"
+            app:destination="@id/confirmAccFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_mainAppActivity"
+            app:destination="@id/mainAppActivity" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment2"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmAccFragment"
+        android:name="com.android.newmommy.ui.fragments.ConfirmAccFragment"
+        android:label="fragment_confirm_acc"
+        tools:layout="@layout/fragment_confirm_acc" />
+    <activity
+        android:id="@+id/mainAppActivity"
+        android:name="com.android.newmommy.ui.activities.MainAppActivity"
+        android:label="activity_main_app"
+        tools:layout="@layout/activity_main_app" />
 </navigation>

@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_120sdp"
-         android:backgroundTint="@color/pink"
+         android:backgroundTint="@color/pink_black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -62,20 +62,20 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputTextLayoutFullName"
+            android:id="@+id/inputTextLayoutUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/text_input_Post_style"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:hint="Full Name"
+            android:layout_marginTop="@dimen/_27sdp"
+            android:hint="Username"
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_20sdp"
             >
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputTextFullName"
+                android:id="@+id/inputTextUserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -85,20 +85,20 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputTextLayoutCountry"
+            android:id="@+id/inputTextLayoutMobilePhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/text_input_Post_style"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/inputTextLayoutFullName"
+            app:layout_constraintTop_toBottomOf="@id/inputTextLayoutUserName"
             android:layout_marginTop="@dimen/_15sdp"
-            android:hint="Email"
+            android:hint="Mobile Phone"
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_20sdp"
             >
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputTextCountry"
+                android:id="@+id/inputTextMobilePhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -107,6 +107,28 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextLayoutPregDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_input_Post_style"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputTextLayoutMobilePhone"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:hint="Pregnancy date"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextPregDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="@dimen/_12ssp"
+                android:paddingTop="@dimen/_13ssp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputTextLayoutEmail"
             android:layout_width="match_parent"
@@ -114,7 +136,7 @@
             style="@style/text_input_Post_style"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/inputTextLayoutCountry"
+            app:layout_constraintTop_toBottomOf="@id/inputTextLayoutPregDate"
             android:layout_marginTop="@dimen/_15sdp"
             android:hint="Email"
             android:layout_marginStart="@dimen/_20sdp"
@@ -152,7 +174,7 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <androidx.appcompat.widget.AppCompatCheckBox
+        <CheckBox
             android:id="@+id/checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -160,13 +182,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/inputTextLayoutPassword"
             android:checked="true"
-            android:text="Enter haeosgjkesn"
+            android:text="I accept the term of use"
             android:textColor="@color/white"
-            android:textSize="@dimen/_15ssp"
+            android:textSize="@dimen/_12ssp"
             android:layout_marginTop="@dimen/_8sdp"
             />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup_btn"
             style="@style/button_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
