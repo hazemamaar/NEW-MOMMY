@@ -49,14 +49,15 @@ public class SignUpFragment extends Fragment {
                 userInfo =new UserInfo(email, password, username, mobile, dateOfBirth, dateOfPregenance);
                 signUpViewModel.register(userInfo);
                 Navigation.findNavController(getView()).navigate(R.id.action_signUpFragment_to_signInFragment);
+
             }
         });
 
-          signUpViewModel.userInfoLiveData.observe(getActivity(), new Observer<Integer>() {
+          signUpViewModel.userInfoLiveData.observe(getActivity(), new Observer<Boolean>() {
               @Override
-              public void onChanged(Integer in) {
-                  if(in==1){
-                      Toast.makeText(getContext(), "Done", Toast.LENGTH_SHORT).show();
+              public void onChanged(Boolean aBoolean) {
+                  if(aBoolean){
+                      Navigation.findNavController(getView()).navigate(R.id.action_signUpFragment_to_signInFragment);
                   }
               }
           });
