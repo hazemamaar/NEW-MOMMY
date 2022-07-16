@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/firstPageFragment">
+
+    <fragment
+        android:id="@+id/firstPageFragment"
+        android:name="com.android.newmommy.ui.fragments.FirstPageFragment"
+        android:label="fragment_first_page"
+        tools:layout="@layout/fragment_first_page" >
+        <action
+            android:id="@+id/action_firstPageFragment_to_boyOrGirlFragment"
+            app:destination="@id/boyOrGirlFragment" />
+        <action
+            android:id="@+id/action_firstPageFragment_to_weeksFragment"
+            app:destination="@id/weeksFragment" />
+        <action
+            android:id="@+id/action_firstPageFragment_to_conectUsFragment"
+            app:destination="@id/conectUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boyOrGirlFragment"
+        android:name="com.android.newmommy.ui.fragments.BoyOrGirlFragment"
+        android:label="fragment_boy_or_girl"
+        tools:layout="@layout/fragment_boy_or_girl" >
+        <action
+            android:id="@+id/action_boyOrGirlFragment_to_yourBoyNameFragment"
+            app:destination="@id/yourBoyNameFragment" />
+        <action
+            android:id="@+id/action_boyOrGirlFragment_to_yourGirlNameFragment"
+            app:destination="@id/yourGirlNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showDataFragment"
+        android:name="com.android.newmommy.ui.fragments.ShowDataFragment"
+        android:label="fragment_show_data"
+        tools:layout="@layout/fragment_show_data" >
+        <argument
+            android:name="s"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/weeksFragment"
+        android:name="com.android.newmommy.ui.fragments.WeeksFragment"
+        android:label="fragment_weeks"
+        tools:layout="@layout/fragment_weeks" >
+        <action
+            android:id="@+id/action_weeksFragment_to_showDataFragment"
+            app:destination="@id/showDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yourBoyNameFragment"
+        android:name="com.android.newmommy.ui.fragments.YourBoyNameFragment"
+        android:label="fragment_your_boy_name"
+        tools:layout="@layout/fragment_your_boy_name" />
+    <fragment
+        android:id="@+id/yourGirlNameFragment"
+        android:name="com.android.newmommy.ui.fragments.YourGirlNameFragment"
+        android:label="YourGirlNameFragment" />
+    <fragment
+        android:id="@+id/conectUsFragment"
+        android:name="com.android.newmommy.ui.fragments.ConectUsFragment"
+        android:label="fragment_conect_us"
+        tools:layout="@layout/fragment_conect_us" />
+</navigation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.FirstPageFragment">
+<include layout="@layout/header"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/head_of_app"
+    />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTextLayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_input_Post_style"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:hint="Search.."
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        app:endIconDrawable="@drawable/ic_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_of_app"
+        app:endIconMode="custom"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="@dimen/_12ssp"
+            android:paddingTop="@dimen/_13ssp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/photo_baby"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_156sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputTextLayoutSearch"
+        android:src="@drawable/child_icon"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_baby_name"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Your Baby Name"
+        android:textSize="@dimen/_12ssp"
+        android:backgroundTint="#0F0C72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photo_baby"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_week"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Your Week"
+        android:textSize="@dimen/_12ssp"
+        android:backgroundTint="#0F0C72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_baby_name"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_contact_us"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Contact Us"
+        android:textSize="@dimen/_12ssp"
+        android:backgroundTint="#0F0C72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_week"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

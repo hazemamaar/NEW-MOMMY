@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.YourBoyNameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/head_of_app"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="end"
+            android:src="@drawable/splashphoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/back_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/inputTextLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_horizontal"
+        android:hint="Email"
+        android:text="Your girl name"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_of_app" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_twoLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputTextLayoutEmail"
+        app:cornerRadius="@dimen/_20sdp"
+        android:text="@string/_2_amp_3_letters"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toStartOf="@id/btn_fourLetters"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textSize="@dimen/_12ssp"
+        style="@style/btn_app"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_fourLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_twoLetters"
+        app:layout_constraintTop_toBottomOf="@id/inputTextLayoutEmail"
+        app:cornerRadius="@dimen/_20sdp"
+        android:text="@string/_4_amp_5_letters"
+        android:textColor="@color/pink"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textSize="@dimen/_12ssp"
+        style="@style/btn_app"
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_2_letters"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_twoLetters"
+        app:layout_constraintEnd_toStartOf="@id/btn_fourLetters"
+        android:layout_marginTop="@dimen/_60sdp"
+        style="@style/custom_card"
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_4_letters"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_200sdp"
+        style="@style/custom_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_fourLetters"
+        app:layout_constraintStart_toEndOf="@id/btn_twoLetters"
+        android:layout_marginTop="@dimen/_60sdp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
