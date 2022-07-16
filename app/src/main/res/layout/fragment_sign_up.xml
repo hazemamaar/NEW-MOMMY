@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_120sdp"
-         android:backgroundTint="@color/pink_black"
+         android:backgroundTint="#752362"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -55,7 +55,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@id/header"
     app:layout_constraintBottom_toBottomOf="parent"
-    android:backgroundTint="@color/blackwi"
+    android:backgroundTint="#291E22"
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -199,6 +199,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:text="Sign Up"
             android:textSize="@dimen/_12ssp"
+            android:backgroundTint="#752362"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/checkbox" />

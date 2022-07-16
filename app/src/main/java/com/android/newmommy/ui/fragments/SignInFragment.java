@@ -50,7 +50,6 @@ public class SignInFragment extends Fragment {
             public void onChanged(Boolean aBoolean) {
                 if(aBoolean){
                     Toast.makeText(getContext(), "Done SignIn", Toast.LENGTH_SHORT).show();
-                    Navigation.findNavController(getView()).navigate(R.id.action_signInFragment_to_mainAppActivity);
                 }
             }
         });
