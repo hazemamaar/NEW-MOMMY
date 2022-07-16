@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstPageFragment"
+        android:enabled="true"
+        android:icon="@drawable/homepage"
+        android:title="Home"/>
+    <item
+        android:id="@+id/conectUsFragment"
+        android:enabled="true"
+        android:icon="@drawable/phone"
+        android:title="categories"/>
+    <item
+        android:id="@+id/weeksFragment"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="favorites"/>
+
+    <item
+        android:id="@+id/boyOrGirlFragment"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+</menu>
