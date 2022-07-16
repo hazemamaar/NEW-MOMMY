@@ -1,7 +1,6 @@
 package com.android.newmommy.repo;
 
 import com.android.newmommy.data.network.Service;
-import com.android.newmommy.model.WeekModel;
 
 import java.util.List;
 

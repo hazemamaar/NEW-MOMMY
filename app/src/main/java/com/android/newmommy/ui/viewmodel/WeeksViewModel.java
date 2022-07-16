@@ -1,12 +1,9 @@
 package com.android.newmommy.ui.viewmodel;
 
-import android.util.Log;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.android.newmommy.model.WeekModel;
 import com.android.newmommy.repo.RepoApp;
 
 import java.util.List;

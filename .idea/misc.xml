@@ -8,7 +8,7 @@
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/drawable/ic_minimize.xml" value="0.2415" />
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/drawable/text_shape.xml" value="0.187" />
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/activity_main.xml" value="0.12314814814814815" />
-        <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/activity_main_app.xml" value="0.17395833333333333" />
+        <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/activity_main_app.xml" value="0.33" />
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/content_main_app.xml" value="0.17395833333333333" />
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/fragment_boy_or_girl.xml" value="0.33" />
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/fragment_conect_us.xml" value="0.35104166666666664" />
@@ -26,6 +26,8 @@
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/fragment_your_girl_name.xml" value="0.35104166666666664" />
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/header.xml" value="0.23854166666666668" />
         <entry key="..\:/Android Task/New Mommy/app/src/main/res/layout/on_boarding_row.xml" value="0.23854166666666668" />
+        <entry key="..\:/Android Task/New Mommy/app/src/main/res/menu/bottom_nav.xml" value="0.35104166666666664" />
+        <entry key="..\:/Android Task/New Mommy/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1225" />
       </map>
     </option>
   </component>

@@ -1,8 +1,7 @@
 package com.android.newmommy.data.network;
 
-import com.android.newmommy.di.ModuleApp;
 import com.android.newmommy.model.UserInfo;
-import com.android.newmommy.model.WeekModel;
+import com.android.newmommy.model.UserModel;
 
 import java.util.List;
 
@@ -19,5 +18,5 @@ public interface Service {
      @POST("signup")
      Completable register(@Body UserInfo userInfo);
      @POST("signin")
-     Completable login(@Body UserInfo userInfo);
+     Observable<UserModel> login(@Body UserInfo userInfo);
 }

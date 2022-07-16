@@ -11,6 +11,7 @@ import android.view.View;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
@@ -21,6 +22,8 @@ import dagger.hilt.android.AndroidEntryPoint;
 @AndroidEntryPoint
 public class MainAppActivity extends AppCompatActivity {
 
+    NavController navController;
+    private NavHostFragment navHostFragment;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainAppBinding binding;
 
@@ -30,6 +33,11 @@ public class MainAppActivity extends AppCompatActivity {
 
         binding = ActivityMainAppBinding.inflate(getLayoutInflater());
        setContentView(binding.getRoot());
+
+        navHostFragment =
+                (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.frag_host_pro);
+        navController = navHostFragment.getNavController();
+        NavigationUI.setupWithNavController(binding.bottomNavigation, navController);
     }
 
 }

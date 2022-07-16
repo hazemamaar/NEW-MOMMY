@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="text_input_Post_style" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <style name="text_input_Post_style" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="boxCornerRadiusBottomEnd">@dimen/_20sdp</item>
         <item name="boxCornerRadiusBottomStart">@dimen/_20sdp</item>
         <item name="boxCornerRadiusTopEnd">@dimen/_20sdp</item>

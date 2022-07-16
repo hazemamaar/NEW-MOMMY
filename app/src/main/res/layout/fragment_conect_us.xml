@@ -46,7 +46,7 @@
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginTop="@dimen/_30sdp"
-            android:src="@drawable/Facebook"
+            android:src="@drawable/face"
             android:layout_marginStart="@dimen/_5sdp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/con_splash"

@@ -59,7 +59,7 @@ public class WeeksFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(stringsList.size()>0){
-                   String stringWeek=stringsList.get(t);
+                   String stringWeek=stringsList.get(t-1);
                     NavDirections action = WeeksFragmentDirections.actionWeeksFragmentToShowDataFragment(stringWeek);
                     Navigation.findNavController(getView()).navigate(action);
 

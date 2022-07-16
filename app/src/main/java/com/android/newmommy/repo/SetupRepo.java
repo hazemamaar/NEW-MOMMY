@@ -2,10 +2,12 @@ package com.android.newmommy.repo;
 
 import com.android.newmommy.data.network.Service;
 import com.android.newmommy.model.UserInfo;
+import com.android.newmommy.model.UserModel;
 
 import javax.inject.Inject;
 
 import io.reactivex.rxjava3.core.Completable;
+import io.reactivex.rxjava3.core.Observable;
 
 public class SetupRepo {
 
@@ -20,7 +22,7 @@ public class SetupRepo {
         return service.register(userInfo);
     }
 
-    public Completable login(UserInfo userInfo){
+    public Observable<UserModel> login(UserInfo userInfo){
         return service.login(userInfo);
     }
 }

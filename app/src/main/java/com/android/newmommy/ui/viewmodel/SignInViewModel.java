@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.android.newmommy.model.UserInfo;
+import com.android.newmommy.model.UserModel;
 import com.android.newmommy.repo.SetupRepo;
 
 import javax.inject.Inject;
@@ -16,6 +17,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel;
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.annotations.NonNull;
 import io.reactivex.rxjava3.core.CompletableObserver;
+import io.reactivex.rxjava3.core.Observer;
 import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 
@@ -31,20 +33,27 @@ public class SignInViewModel extends ViewModel {
     }
 
     public void login(UserInfo userInfo){
-        setupRepo.login(userInfo).subscribeOn(Schedulers.computation()).observeOn(AndroidSchedulers.mainThread()).subscribe(new CompletableObserver() {
+        setupRepo.login(userInfo).subscribeOn(Schedulers.computation()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<UserModel>() {
             @Override
             public void onSubscribe(@NonNull Disposable d) {
 
             }
 
             @Override
-            public void onComplete() {
-                userMutableLiveData.setValue(true);
+            public void onNext(@NonNull UserModel userModel) {
+                if (userModel.getEmail().length()>1)
+                    userMutableLiveData.setValue(true);
+
             }
 
             @Override
             public void onError(@NonNull Throwable e) {
-                Log.i("mmmm", "onError: "+e.getLocalizedMessage());
+
+            }
+
+            @Override
+            public void onComplete() {
+
             }
         });
     }

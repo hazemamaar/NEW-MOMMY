@@ -49,6 +49,7 @@ public class SignInFragment extends Fragment {
             @Override
             public void onChanged(Boolean aBoolean) {
                 if(aBoolean){
+                    Navigation.findNavController(getView()).navigate(R.id.action_signInFragment_to_mainAppActivity);
                     Toast.makeText(getContext(), "Done SignIn", Toast.LENGTH_SHORT).show();
                 }
             }
