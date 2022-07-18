@@ -35,6 +35,7 @@
                 app:readMoreMaxLine="30"
                 android:textSize="@dimen/_10ssp"
                 app:readMoreText="…ReadMore"
+                app:readLessText="…ReadLess"
                 tools:ignore="MissingClass" />
 
         </androidx.core.widget.NestedScrollView>
